@@ -2,7 +2,7 @@
 //// SFZ Definition File
 ////-----------------------
 
-ampeg_release=0.1
+ampeg_release=0.2
 
 <region> sample=flac/Clavinet54_f0.flac lokey=1 hikey=29 pitch_keycenter=29 lovel=0 hivel=54
 <region> sample=flac/Clavinet54_f#0.flac key=30 lovel=0 hivel=54
@@ -247,3 +247,20 @@ ampeg_release=0.1
 <region> sample=flac/Clavinet127_d5.flac key=86 lovel=107 hivel=127
 <region> sample=flac/Clavinet127_d#5.flac key=87 lovel=107 hivel=127
 <region> sample=flac/Clavinet127_e5.flac lokey=88 hikey=127 pitch_keycenter=88 lovel=107 hivel=127
+
+<group> trigger=release loop_mode=one_shot amp_veltrack=.75 rt_decay=6
+<region> sample=flac/2_Er.flac pitch_keycenter=e1 hikey=f1
+<region> sample=flac/2_Abr.flac pitch_keycenter=g#1 lokey=f#1 hikey=a1
+<region> sample=flac/3_Cr.flac pitch_keycenter=c2 lokey=a#1 hikey=c#2
+<region> sample=flac/3_Er.flac pitch_keycenter=e2 lokey=d2 hikey=f2
+<region> sample=flac/3_Abr.flac pitch_keycenter=g#2 lokey=f#2 hikey=a2
+<region> sample=flac/4_Cr.flac pitch_keycenter=c3 lokey=a#2 hikey=c#3
+<region> sample=flac/4_Er.flac pitch_keycenter=e3 lokey=d3 hikey=f3
+<region> sample=flac/4_Abr.flac pitch_keycenter=g#3 lokey=f#3 hikey=a3
+<region> sample=flac/5_Cr.flac pitch_keycenter=c4 lokey=a#3 hikey=c#4
+<region> sample=flac/5_Er.flac pitch_keycenter=e4 lokey=d4 hikey=f4
+<region> sample=flac/5_Abr.flac pitch_keycenter=g#4 lokey=f#4 hikey=a4
+<region> sample=flac/6_Cr.flac pitch_keycenter=c5 lokey=a#4 hikey=c#5
+<region> sample=flac/6_Er.flac pitch_keycenter=e5 lokey=d5 hikey=f5
+<region> sample=flac/6_Abr.flac pitch_keycenter=g#5 lokey=f#5 hikey=a5
+<region> sample=flac/7_Cr.flac pitch_keycenter=c6 lokey=a#5
