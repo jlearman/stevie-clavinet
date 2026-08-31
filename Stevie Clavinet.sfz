@@ -2,8 +2,9 @@
 //// SFZ Definition File
 ////-----------------------
 
-ampeg_release=0.2
+<group>
 
+ampeg_release=0.2
 <region> sample=flac/Clavinet54_f0.flac lokey=1 hikey=29 pitch_keycenter=29 lovel=0 hivel=54
 <region> sample=flac/Clavinet54_f#0.flac key=30 lovel=0 hivel=54
 <region> sample=flac/Clavinet54_g0.flac key=31 lovel=0 hivel=54
@@ -249,6 +250,7 @@ ampeg_release=0.2
 <region> sample=flac/Clavinet127_e5.flac lokey=88 hikey=127 pitch_keycenter=88 lovel=107 hivel=127
 
 <group> trigger=release loop_mode=one_shot amp_veltrack=.75 rt_decay=6
+fxsend1=100
 <region> sample=flac/2_Er.flac pitch_keycenter=e1 hikey=f1
 <region> sample=flac/2_Abr.flac pitch_keycenter=g#1 lokey=f#1 hikey=a1
 <region> sample=flac/3_Cr.flac pitch_keycenter=c2 lokey=a#1 hikey=c#2
@@ -264,3 +266,12 @@ ampeg_release=0.2
 <region> sample=flac/6_Er.flac pitch_keycenter=e5 lokey=d5 hikey=f5
 <region> sample=flac/6_Abr.flac pitch_keycenter=g#5 lokey=f#5 hikey=a5
 <region> sample=flac/7_Cr.flac pitch_keycenter=c6 lokey=a#5
+
+// Sfizz only.  With Aria, just use CC91, or the controls page reverb slider
+<effect>
+    type=fverb
+    reverb_input=100
+    reverb_dry=100
+    reverb_wet=10
+    reverb_wet_oncc91=100
+
