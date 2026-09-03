@@ -272,6 +272,6 @@ fxsend1=100
     type=fverb
     reverb_input=100
     reverb_dry=100
-    reverb_wet=10
-    reverb_wet_oncc91=100
+    reverb_wet=0 // set nonzero for baked in reverb
+    // reverb_wet_oncc91=100 // doesn't work
 
